@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Mashi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Photo Gallery</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Blooming Life - Memories & Moments</p>
+    </header>
+    
+    <main>
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="biodata.html">Biodata</a></td>
+                    <td><a href="education.html">Education</a></td>
+                    <td><a href="experience.html">Experience</a></td>
+                    <td><a href="family.html">Family</a></td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td><a href="contact.html">Contact</a></td>
+                </tr>
+            </table>
+        </nav>
+        
+       <!-- Music Player Section -->
+        <section class="music-player-container">
+            <article class="music-player">
+                <span class="music-note">♪</span>
+                
+                <figure class="audio-controls">
+                    <audio controls autoplay loop>
+                        <source src="audio/surat hati.mp3" type="audio/mpeg">
+                        <source src="music/song.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption class="song-info">Enjoy some background music while exploring my website</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section>
+            <h2>My Gallery Collection</h2>
+            <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 1.5rem;">
+                Welcome to my visual diary! Here you'll find photos that capture special moments, interests, and memories that define my journey. From family gatherings to personal hobbies, each picture tells a story.
+            </p>
+            
+            <article class="category-tabs">
+                <span class="category-tab active" onclick="filterGallery('all')">All Photos & Videos</span>
+                <span class="category-tab" onclick="filterGallery('family')">Family</span>
+                <span class="category-tab" onclick="filterGallery('hobbies')">Hobbies</span>
+                <span class="category-tab" onclick="filterGallery('pets')">Pets</span>
+                <span class="category-tab" onclick="filterGallery('campus')">University Life</span>
+                <span class="category-tab" onclick="filterGallery('friends')">Friends & Companion</span>
+            </article>
+        </section>
+        
+        <section>
+            <article class="gallery-container">
+                <article class="gallery-item main-featured" data-category="family">
+                    <img src="images/My Home 2.jpg" alt="My Home" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">My Home</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="pets">
+                    <img src="images/PUTEH.jpg" alt="Puteh" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Puteh</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/kaunseling.jpg" alt="Peer Counseling Club" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Peer Counseling Club</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="pets">
+                    <img src="images/LEXI.jpg" alt="Lexi" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Lexi</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="hobbies">
+                    <img src="images/first medal silat.jpg" alt="My First Tournament & Medal (Silat)" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">My First Tournament & Medal (Silat)</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="hobbies">
+                    <img src="images/TAEKWONDO.jpg" alt="Taekwondo" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Taekwondo</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="hobbies">
+                    <img src="images/BADMINTON.JPG" alt="Badminton" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Badminton</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/CAMPUS 1.jpg" alt="Dean's List Ceremony" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Dean's List Ceremony</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/CAMPUS 3.jpg" alt="Super UiTM" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Super UiTM</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="family">
+                    <img src="images/KAKAK,MAK,AMI.jpg" alt="My Favourite Ladies" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">My Favourite Ladies</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/CAMPUS 2.jpg" alt="Hiking Gunung Datuk" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Hiking Gunung Datuk</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/hiking bukit batu putih.jpg" alt="Hiking Bukit Batu Putih" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Hiking Bukit Batu Putih</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/CAMPUS 4.jpg" alt="Football Open Tournament" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Football Open Tournament</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="hobbies">
+                    <img src="images/SILAT 3.jpg" alt="Silat" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Silat</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+                
+                <article class="gallery-item" data-category="family">
+                    <img src="images/ARYAN.jpg" alt="With Little Aryan" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">With Little Aryan</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="family">
+    <video controls class="gallery-img" poster="images/cover video birthday mak.png">
+        <source src="video/birthday mak.mp4" alt="Celebrating Mama's Birthday" type="video/mp4">
+        <source src="videos/my-family.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <article class="gallery-caption">
+        <p class="gallery-title"> Celebrating Mama's Birthday</p>
+        <p class="gallery-desc"></p>
+    </article>
+</article>
+
+                <article class="gallery-item" data-category="family">
+                    <img src="images/ARYAN 2.jpg" alt="Aryan Again" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Aryan Again</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="campus">
+                    <img src="images/ghombau sports day 2.JPG" alt="Ghombau Sports Day" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Ghombau Sports Day</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="family">
+                    <img src="images/ARYAN 3.jpg" alt="Building McLaren with Aryan" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Building McLaren with Aryan</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="hobbies">
+    <video controls class="gallery-img" poster="images/cover video tkd.png">
+        <source src="video/TAEKWONDO.mp4" alt="Taekwondo Black Belt Grading" type="video/mp4">
+        <source src="videos/my-hobby.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <article class="gallery-caption">
+        <p class="gallery-title">Taekwondo Black Belt Grading</p>
+        <p class="gallery-desc"></p>
+    </article>
+</article>
+
+                <article class="gallery-item" data-category="hobbies">
+    <video controls class="gallery-img" poster="images/cover video silat.png">
+        <source src="video/SILAT.mp4" alt="Silat MSSS Tournament" type="video/mp4">
+        <source src="videos/my-hobby.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <article class="gallery-caption">
+        <p class="gallery-title">Silat MSSS Tournament</p>
+        <p class="gallery-desc"></p>
+    </article>
+</article>
+
+               <article class="gallery-item" data-category="friends">
+                    <img src="images/ERATRIANS 2.jpg" alt="Eratrians" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Eratrians</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/Sausage League.jpg" alt="Sausage League" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Sausage League</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+               <article class="gallery-item" data-category="friends">
+                    <img src="images/SQUAD SILAT.jpg" alt="Kombat Squad" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Kombat Squad</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>       
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/JIRAN.jpg" alt="Beloved Neighbours" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Beloved Neighbours</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/JANTAN.jpg" alt="JANTAN OG" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Jantan OG</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/IMCO.jpg" alt="IMCo FAMILIA" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">IMCo Familia</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/JANTAN 2.jpg" alt="JANTAN E" class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Jantan E</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+
+                <article class="gallery-item" data-category="friends">
+                    <img src="images/ALUMNI DS802.jpg" alt="ALUMNI DS802 " class="gallery-img">
+                    <article class="gallery-caption">
+                        <p class="gallery-title">Alumni DS802</p>
+                        <p class="gallery-desc"></p>
+                    </article>
+                </article>
+ 
+            </article>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">&copy; 2025 Muhammad Syahmi Bin Mohd Said. All rights reserved.</p>
+        <p><a href="index.html" style="color: #3498db; text-decoration: none; font-weight: 500;">🏠 Back to Home</a></p>
+        <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">Made with ❤️</p>
+    </footer>
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Mashi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <article class="header-content">
+            <h1>Welcome to Mashi's</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 1rem;">Muhammad Syahmi Bin Mohd Said | Diploma in Information Science</p>
+        </article>
+    </header>
+    
+    <main>
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="biodata.html">Biodata</a></td>
+                    <td><a href="education.html">Education</a></td>
+                    <td><a href="experience.html">Experience</a></td>
+                    <td><a href="family.html">Family</a></td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td><a href="contact.html">Contact</a></td>
+                </tr>
+            </table>
+        </nav>
+        
+        <!-- Music Player Section -->
+        <section class="music-player-container">
+            <article class="music-player">
+                <span class="music-note">♪</span>
+                
+                <figure class="audio-controls">
+                    <audio controls autoplay loop>
+                        <source src="audio/rather be.mp3" type="audio/mpeg">
+                        <source src="music/song.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption class="song-info">Enjoy some background music while exploring my website</figcaption>
+                </figure>
+            </article>
+        </section>
+        
+        <section class="welcome-card">
+            <h2>Hello, Welcome to My Website!</h2>
+            <p class="intro-text">This is Mashi, you are free to navigate through my profile to learn about my background, my family, and my personal life.</p>
+            
+            <!-- Profile Picture and Live Clock Section -->
+            <article class="profile-clock-container">
+                <!-- Profile Picture -->
+                <figure class="profile-picture">
+                    <img src="images/self pic.jpeg" alt="Muhammad Syahmi's Profile Picture" onerror="this.src='https://via.placeholder.com/250x250/667eea/ffffff?text=M+Syahmi'">
+                </figure>
+                
+                <!-- Live Clock -->
+                <ul class="live-clock" role="timer" aria-label="Live clock">
+                    <li class="clock-icon" aria-hidden="true">⏰</li>
+                    <li class="clock-title">LIVE CLOCK</li>
+                    <li class="time-display">
+                        <time id="liveTime" datetime="">00:00:00</time>
+                    </li>
+                    <li class="date-display">
+                        <time id="liveDate" datetime="">Wednesday, 31 December 2025</time>
+                    </li>
+                </ul>
+            </article>
+            
+            <p class="intro-text">I'm Mashi, a passionate individual with dreams in the information science industry. Explore my website to learn more about my background, education, family, and interests.</p>
+            
+            <blockquote class="quote">
+                "We're all stories in the end. Just make it a good one, eh?" - Doctor Who
+            </blockquote>
+        </section>
+        
+        <section class="welcome-card">
+            <h2>Global Facts About Me</h2>
+            
+            <article class="fact-boxes">
+                <article class="fact-box" style="background: linear-gradient(145deg, #667eea, #764ba2);">
+                    <p class="fact-title">🎂 23 September 2005</p>
+                    <p class="fact-content">Date of Birth</p>
+                </article>
+                
+                
+                <article class="fact-box" style="background: linear-gradient(145deg, #3498db, #2980b9);">
+                    <p class="fact-title"><a href="https://maps.app.goo.gl/Zn5L19j32XFqTF7L6" style="text-decoration: none;">Klang, Selangor></a></p>
+                    <p class="fact-content">Place of Birth</p>
+                </article>
+                
+                <article class="fact-box" style="background: linear-gradient(145deg, #2ecc71, #27ae60);">
+                    <p class="fact-title">📚 Information Science</p>
+                    <p class="fact-content">Current Studies</p>
+                </article>
+                
+                <article class="fact-box" style="background: linear-gradient(145deg, #e74c3c, #c0392b);">
+                    <p class="fact-title">🥋 Taekwondo & Silat</p>
+                    <p class="fact-content">Martial Arts</p>
+                </article>
+                
+                <article class="fact-box" style="background: linear-gradient(145deg, #f39c12, #e67e22);">
+                    <p class="fact-title">👶 Youngest of Five</p>
+                    <p class="fact-content">Family Position</p>
+                </article>
+                
+                <a href="cats.html" style="text-decoration: none;">
+                    <article class="fact-box" style="background: linear-gradient(145deg, #9b59b6, #8e44ad);">
+                        <p class="fact-title">🐱 Puteh & Lexi</p>
+                        <p class="fact-content">My Cats</p>
+                    </article>
+                </a>
+            </article>
+        </section>
+        
+        <section class="welcome-card">
+            <h2>Quick Navigation</h2>
+            <table>
+                <tr>
+                    <th>Page</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><a href="biodata.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Biodata</a></td>
+                    <td>Personal information, background, and interests</td>
+                </tr>
+                <tr>
+                    <td><a href="education.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Education</a></td>
+                    <td>Academic journey and achievements</td>
+                </tr>
+                <tr>
+                    <td><a href="experience.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Experience</a></td>
+                    <td>Experiences throughout my life</td>
+                </tr>
+                <tr>
+                    <td><a href="family.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Family</a></td>
+                    <td>Meet my wonderful family members</td>
+                </tr>
+                <tr>
+                    <td><a href="gallery.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Gallery</a></td>
+                    <td>Photos and memories collection</td>
+                </tr>
+                <tr>
+                    <td><a href="contact.html" style="color: #3498db; text-decoration: none; font-weight: 500;">Contact</a></td>
+                    <td>Get in touch with me</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">&copy; 2025 Muhammad Syahmi Bin Mohd Said. All rights reserved.</p>
+        <p style="opacity: 0.9;">Universiti Teknologi MARA (UiTM) | Diploma in Information Science</p>
+        <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

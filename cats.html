@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for smaller cat images */
+        .cat-image {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .cat-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        
+        .cat-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+        }
+        
+        .cat-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #b69b4e, #1a1a2e);
+        }
+        
+        .cat-name {
+            font-weight: 500;
+            color: #1a1a2e;
+            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .cat-image {
+                width: 300px;
+                height: 225px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cat-image {
+                width: 250px;
+                height: 188px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Cats</h1>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+                <td><a href="contact.html">Contact</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <main>
+        <section class="welcome-card">
+            <h2>Meet Our Feline Friends</h2>
+            <p class="intro-text">Two beautiful cats who bring joy to our home.</p>
+            
+            <article class="cat-container">
+                <img src="images/LEXI.jpg" alt="Lexi the cat" class="cat-image">
+                <h3 class="cat-name">Lexi</h3>
+                <p class="gallery-desc">A beautiful and elegant companion with striking features.</p>
+            </article>
+
+            <article class="cat-container">
+                <img src="images/PUTEH.jpg" alt="Puteh the cat" class="cat-image">
+                <h3 class="cat-name">Puteh</h3>
+                <p class="gallery-desc">A lovely white cat with gentle eyes and calm demeanor.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cats Gallery © 2025</p>
+    </footer>
+</body>
+</html>
